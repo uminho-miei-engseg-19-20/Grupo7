@@ -36,12 +36,11 @@ Como se pode observar no resultado da análise, o sítio da CM Barcelos não se 
 
 #### Pergunta 3.1
 
-Para a resolução deste exercício, o grupo escolheu dois servidores de empresas comerciais em Madrid, [77.226.197.217](https://www.shodan.io/host/77.226.197.217) e [88.80.148.127](https://www.shodan.io/host/88.80.148.127).
+Para a resolução deste exercício, o grupo escolheu dois servidores de empresas comerciais em Madrid, [Vodafone Espanha (77.226.197.217)](https://www.shodan.io/host/77.226.197.217) e [Belcloud LTD (88.80.148.127)](https://www.shodan.io/host/88.80.148.127).
 
 - Resultados *SSH-Audit*
-
-- [77.226.197.217](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/ssh-audit-77.226.197.217.txt)
-- [88.80.148.127](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/ssh-audit-88.80.148.127.txt)
+  - [Vodafone Espanha](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/ssh-audit-77.226.197.217.txt)
+  - [Belcloud LTD](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/ssh-audit-88.80.148.127.txt)
 
 - Versões do *Software*
 
@@ -59,4 +58,9 @@ Para a resolução deste exercício, o grupo escolheu dois servidores de empresa
 (gen) compatibility: OpenSSH 7.3+ (some functionality from 6.6), Dropbear SSH 2016.73+ (some functionality from 0.52)
 (gen) compression: enabled (zlib@openssh.com)
 ````
+- Versão com mais vulnerabilidades
 
+Após a análise dos resultados do *SSH-Audit* e do *Shodan*, foi possível perceber que para o servidor da Vodafone Espanha não foram encontradas quaisquer vulnerabilidades, o que não significa que não possam existir, apenas que estes *scans* não identificaram nenhuma. Já para o servidor da Belcloud LTD, o *Shodan* encontrou duas vulnerabilidades, [
+CVE-2018-15919](https://www.cvedetails.com/cve/CVE-2018-15919/) e [CVE-2017-15906](https://www.cvedetails.com/cve/CVE-2017-15906).
+
+Segundo o CVE-Details ambas as vulnerabilidades possuem um *CVSS score* de 5.0. Apesar da dificuldade da exploração dessas vulnerabilidades ser baixa, as mesmas não podem ser consideradas graves.
