@@ -10,9 +10,9 @@ De seguida encontram-se os ficheiros relativos à resolução desta pergunta.
 - [desofusca-app.py](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/Blind%20signatures/desofusca-app.py)
 - [verify-app.py](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/Blind%20signatures/verify-app.py)
 
-Nota: Quando fôr uma opção que seja de uma só letra, ie. ```-s```, pode-se escrever mesmo assim, mas se fôr uma opção com mais de uma letra, ie. ```-RDash``` tem de escrever com dois traços, ie., ```--RDash```. 
+Nota: Quando fôr uma opção que seja de uma só letra, ie. ```-s```, pode-se escrever mesmo assim, mas se fôr uma opção com mais de uma letra, ie. ```-RDash``` tem de escrever com dois traços, ie., ```--RDash```. Para além disso, os argumentos dados nas opções devem estar sempre entre aspas.
 
-Ex: ```python desofusca-app.py -s <Blind Signature> --RDash <pRDashComponents>```.
+Ex: ```python desofusca-app.py -s "<Blind Signature>" --RDash "<pRDashComponents>"```.
 
 #### Pergunta 2.1
 
