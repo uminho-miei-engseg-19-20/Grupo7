@@ -10,6 +10,10 @@ De seguida encontram-se os ficheiros relativos à resolução desta pergunta.
 - [desofusca-app.py](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/Blind%20signatures/desofusca-app.py)
 - [verify-app.py](https://github.com/uminho-miei-engseg-19-20/Grupo7/blob/master/TPraticas/TPC2/Blind%20signatures/verify-app.py)
 
+Nota: Quando fôr uma opção que seja de uma só letra, tipo ```-s``` podes escrever mesmo assim, mas se fôr uma opção com mais de uma letra, tipo ```-RDash``` tens de escrever com dois traços, ie., ```--RDash```. 
+
+Ex: ```python desofusca-app.py -s <Blind Signature> --RDash <pRDashComponents>```.
+
 #### Pergunta 2.1
 
 Nesta pergunta, foi pedido ao grupo que escolhesse dois sitíos de Câmaras Municipais Portuguesas e que se efetuasse o *SSL Server Test* para cada um desses sitíos. As Câmaras Municipais escolhidas foram a de [Barcelos](https://www.cm-barcelos.pt/) e a de [Lisboa](https://www.lisboa.pt/).
